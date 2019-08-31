@@ -11,10 +11,10 @@ module PGDemo() {
   bevel_pair(w=5, n1=17, n2=13, only=0, axis_angle=60, helix_angle = zerol(60));
 
   Rz(360*$t/17) Tz(-10) 
-    spur_gear(n=17, pressure_angle=20, z=10, helix_angle = [ for (x=linspace(0,180,11)) 40*sin(x) ]);
+    spur_gear(n=17, pressure_angle=20, z=10, chamfer=30, helix_angle = [ for (x=linspace(0,180,11)) 40*sin(x) ]);
 
   Tz(-10) Rz(-360/17*2) Ty((13+17)/2) Mx() Rz(360*$t/13) 
-    spur_gear(n=13, pressure_angle=20, z=10, helix_angle = [ for (x=linspace(0,180,11)) 40*sin(x) ]);
+    spur_gear(n=13, pressure_angle=20, z=10, chamfer=30, helix_angle = [ for (x=linspace(0,180,11)) 40*sin(x) ]);
 
   Rz(360*$t/17) Mz() Cy(h=10, r=3, C=0, $fn=17);
 }
@@ -35,7 +35,7 @@ module spur_gear(
   m = 1,   // module
   z = 1,   // thickness
   pressure_angle = 20,
-  helix_angle    = 20,  // the sign gives the handiness, can be a list
+  helix_angle    = 0,   // the sign gives the handiness, can be a list
   backlash       = 0.1, // in module units
 //shortcuts
   w  = undef, //overrides z when defined
@@ -43,6 +43,8 @@ module spur_gear(
   b0 = undef, //overrides helix angle when defined
   tol= undef, //overrides backlash
 //advanced options
+  chamfer       = 0, // degrees, should be in [0:90[
+  chamfer_shift = 0, // from the pitch radius in module units
   add = 0, // add to addendum
   ded = 0, // subtract to the dedendum
   x   = 0, // profile shift
@@ -64,7 +66,12 @@ module spur_gear(
   Nlay = len(pts)/fz;
   side = make_side_faces(Nlay, fz);
   caps = make_cap_faces(Nlay, fz, n);
-  polyhedron(points=pts, faces=concat(side, caps));
+  if (chamfer == 0) polyhedron(points=pts, faces=concat(side, caps));
+  else render(1) I() {
+    polyhedron(points=pts, faces=concat(side, caps));
+    MKz() let(t = chamfer, rc = m*n/2 + m*chamfer_shift) 
+      Cy(r1=z/2/tan(t)+rc, r2=0, h=rc*tan(t)+z/2, C=0, $fn=n);
+  }
 }
 
 module bevel_gear(
