@@ -2,7 +2,7 @@
 
 ## crossed_axis_drive.scad
 
-![](https://i.imgur.com/2gOQ9Pu.gif "crossed_axes_drive")
+![](https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/crossed_axis_drive.gif "crossed_axes_drive")
 
 ## ...
 
