@@ -29,7 +29,11 @@ ________________
 
 ## Extra:
 
- * You will also find a copy of the nice open access paper which I use for the generation of the involute profiles. It serves as documentation for the computations implemented in PolyGearBase.scad
+In the docs folder you will find a copy of the nice open access paper which I use for the generation of the involute profiles. It explains the computations implemented in PolyGearBase.scad
+
+## Examples:
+
+The example folder collects some complex assemblies which take just a few lines when empowering PolyGear.
 
 ## Enjoy!
 
