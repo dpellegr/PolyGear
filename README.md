@@ -1,6 +1,6 @@
 # Introducing PolyGear
 
-![](https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/PolyGear_large.gif "PolyGear")
+![](https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/PolyGear.gif "PolyGear")
 
 PolyGear is a powerful OpenSCAD library for the generation of **spur** and **bevel gears** as a single polyhedron. The library allows full control of the **involute tooth profile**, including pressure angle, backlash, variable helix angle, addendum, dedendum and profile shifting.
 
