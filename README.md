@@ -33,7 +33,7 @@ In the docs folder you will find a copy of the nice open access paper which I us
 
 ## Examples:
 
-The example folder collects some complex assemblies which take just a few lines when empowering PolyGear.
+The example folder collects some complex assemblies constructed with just a few line of codes by empowering PolyGear.
 
 ## Enjoy!
 
