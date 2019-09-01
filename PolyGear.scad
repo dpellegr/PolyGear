@@ -11,10 +11,10 @@ module PGDemo() {
   bevel_pair(w=5, n1=17, n2=13, only=0, axis_angle=60, helix_angle = zerol(60));
 
   Rz(360*$t/17) Tz(-10) 
-    spur_gear(n=17, pressure_angle=20, z=10, chamfer=30, helix_angle = [ for (x=linspace(0,180,11)) 40*sin(x) ]);
+    spur_gear(n=17, pressure_angle=20, z=10, chamfer=30, helix_angle = [ for (x=linspace(-1,1,11)) exp(-abs(x))*50*sign(x) ]);
 
   Tz(-10) Rz(-360/17*2) Ty((13+17)/2) Mx() Rz(360*$t/13) 
-    spur_gear(n=13, pressure_angle=20, z=10, chamfer=30, helix_angle = [ for (x=linspace(0,180,11)) 40*sin(x) ]);
+    spur_gear(n=13, pressure_angle=20, z=10, chamfer=30, helix_angle = [ for (x=linspace(-1,1,11)) exp(-abs(x))*50*sign(x) ]);
 
   Rz(360*$t/17) Mz() Cy(h=10, r=3, C=0, $fn=17);
 }
@@ -27,7 +27,7 @@ function constant(helix=45, $fn=9) = lst_repeat(helix, $fn);
 function zerol(helix=30, $fn=9) = linspace(-helix, helix, $fn);
 function spiral(helix=30, $fn=9) = linspace(-helix, 0, $fn);
 function herringbone(helix=30, $fn=9) = let(n=floor($fn/2)) 
-  concat( lst_repeat(-helix, $fn),[0],lst_repeat(helix, $fn) );
+  concat( lst_repeat(-helix, n),[0],lst_repeat(helix, n) );
 
 module spur_gear(
 //basic options
@@ -58,6 +58,7 @@ module spur_gear(
                      is_list(hlx) ? hlx : [hlx/2, hlx/2];
   backlash       = is_undef(tol) ? backlash : tol; // in module units
   fz = len(helix_angle);
+//  echo(helix_angle);
   pts = flatten([ for (i=[0:fz-1]) let(zi= z*i/(fz-1) - z/2) gear_section(
     n=n, m=m, z=zi,
     pressure_angle = pressure_angle, helix_angle = helix_angle[i], backlash = backlash,
@@ -67,7 +68,7 @@ module spur_gear(
   side = make_side_faces(Nlay, fz);
   caps = make_cap_faces(Nlay, fz, n);
   if (chamfer == 0) polyhedron(points=pts, faces=concat(side, caps));
-  else render(1) I() {
+  else render(10) I() {
     polyhedron(points=pts, faces=concat(side, caps));
     MKz() let(t = chamfer, rc = m*n/2 + m*chamfer_shift) 
       Cy(r1=z/2/tan(t)+rc, r2=0, h=rc*tan(t)+z/2, C=0, $fn=n);
@@ -99,7 +100,7 @@ module bevel_gear(
   z              = is_undef(z) ? w*cos(cone_angle) : z;
   pressure_angle = is_undef(a0) ? pressure_angle : a0;
   helix_angle    = let(hlx = is_undef(b0) ? helix_angle : b0) 
-                     concat([0], is_list(hlx) ? cum_avg(hlx) : [hlx] );
+                     is_list(hlx) ? hlx : [hlx/2, hlx/2];
   backlash       = is_undef(tol) ? backlash : tol; // in module units
   fz = len(helix_angle);
   r0 = m*n/2;
@@ -109,10 +110,10 @@ module bevel_gear(
       fold_on_sphere( 
         Tzpts ( 
           gear_section(
-            n=n, m=m*H/H0, z=zi/cos(cone_angle),
+            n=n, m=m*H/H0, z=zi - z/2,
             pressure_angle = pressure_angle, helix_angle = helix_angle[i], backlash = backlash,
             add = add, ded = ded, x = x, type = type, $fn=$fn
-          ), -zi/cos(cone_angle)
+          ), -zi + z/2
         ), R, [0,0,H]
       ), zi
     )
