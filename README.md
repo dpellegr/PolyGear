@@ -37,7 +37,7 @@ The library uses industry standard terminology and conventions. KHK Gears publis
 
 If you want to dive deeper in the evaluation/parameterization of the involute profiles, [this nice open access paper](https://github.com/dpellegr/PolyGear/blob/master/docs/Hartig%20Stein%20-%203D%20involute%20gear%20evaluation.pdf), is what inspired the computations implemented in PolyGearBase.scad.
 
-## FAQ
+## FAQ:
 
 ### What is this "module" thing? Can't I just specify the radius?
 
