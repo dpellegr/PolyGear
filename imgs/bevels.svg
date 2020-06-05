@@ -11,9 +11,9 @@
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 210 297"
-   height="297mm"
-   width="210mm">
+   viewBox="0 0 18.976986 29.081999"
+   height="29.081999mm"
+   width="18.976986mm">
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -40,6 +40,10 @@
        effect="bspline" />
   </defs>
   <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
      inkscape:window-maximized="1"
      inkscape:window-y="18"
      inkscape:window-x="0"
@@ -49,8 +53,8 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="1115.7386"
-     inkscape:cx="19.487627"
+     inkscape:cy="80.478606"
+     inkscape:cx="2.9041157"
      inkscape:zoom="3.3591848"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -71,6 +75,7 @@
     </rdf:RDF>
   </metadata>
   <g
+     transform="translate(2.1103215,-273.91254)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
