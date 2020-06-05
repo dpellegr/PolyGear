@@ -5,63 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="bevels.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 18.976986 29.081999"
-   height="29.081999mm"
-   width="18.976986mm">
+   viewBox="0 0 19.976986 30.081999"
+   height="30.081999mm"
+   width="19.976986mm">
   <defs
-     id="defs2">
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect843"
-       effect="bspline" />
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       lpeversion="1"
-       is_visible="true"
-       id="path-effect839"
-       effect="bspline" />
-  </defs>
-  <sodipodi:namedview
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:window-maximized="1"
-     inkscape:window-y="18"
-     inkscape:window-x="0"
-     inkscape:window-height="792"
-     inkscape:window-width="1440"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="80.478606"
-     inkscape:cx="2.9041157"
-     inkscape:zoom="3.3591848"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     id="base" />
+     id="defs2" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -75,26 +25,17 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(2.1103215,-273.91254)"
-     id="layer1"
-     inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     transform="translate(2.6103215,-273.41254)"
+     id="layer1">
     <path
-       sodipodi:nodetypes="cccc"
-       inkscape:original-d="M 15,300 0,274.4 V 300 Z"
-       inkscape:path-effect="#path-effect839"
        id="path837"
        d="m 15,300 c 0,0 -15,-25.6 -15,-25.6 0,0 0,25.6 0,25.6 0,0 15,0 15,0 z"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       sodipodi:nodetypes="cc"
-       inkscape:original-d="M 0,295 H 12.069"
-       inkscape:path-effect="#path-effect843"
        id="path841"
        d="m 0,295 c 0,0 12.069,0 12.069,0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
-       sodipodi:nodetypes="cc"
        id="path853"
        d="m 0.17836705,279.37198 c 0.76056047,0.003 1.47444815,-0.26216 2.10378145,-0.72083"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
@@ -107,8 +48,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px"
          y="302.30264"
          x="4.692811"
-         id="tspan863"
-         sodipodi:role="line">r<tspan
+         id="tspan863">r<tspan
    id="tspan867"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';baseline-shift:sub">ref</tspan></tspan></text>
     <text
@@ -117,7 +57,6 @@
        x="14.079369"
        y="297.41687"
        id="text865-0"><tspan
-         sodipodi:role="line"
          id="tspan863-8"
          x="14.079369"
          y="297.41687"
@@ -128,7 +67,6 @@
        x="-2.2427423"
        y="298.28503"
        id="text865-5"><tspan
-         sodipodi:role="line"
          id="tspan863-0"
          x="-2.2427423"
          y="298.28503"
@@ -139,7 +77,6 @@
        x="0.68871975"
        y="281.98221"
        id="text865-6"><tspan
-         sodipodi:role="line"
          id="tspan863-3"
          x="0.68871975"
          y="281.98221"
