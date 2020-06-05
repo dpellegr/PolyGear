@@ -19,6 +19,9 @@ being, to my taste, either too hampered, fragile or computational expensive. My 
 I would expect that the comments in the code and the demo example should suffice as user **documentation**, but if I collect some good questions I may compile a FAQ.
 ________________
 
+## Requirements:
+Polygear requires **OpenSCAD v2019.05** or more recent.
+
 ## Library files:
 
  * PolyGear.scad - main file, the one that you should read and *use* in your project
