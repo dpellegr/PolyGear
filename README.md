@@ -47,12 +47,12 @@ If you really want to go the radius way, give a random module and use the openSC
 
 ### How are Bevel Gears constructed/determined?
 
-The construction of the bevel gears starts from the reference circle [see (fig 2.6)](https://github.com/dpellegr/PolyGear/blob/master/docs/Basic%20Gear%20Terminology%20and%20Calculation%20-%20KHK%20Gears.pdf) of the bottom face. it is always centered at the origin of the XY plane and its radius is determined by the module and the number of teeth (as for spur gears).
+The construction of the bevel gears starts from the reference circle of the bottom face. It is always centered at the origin of the XY plane and its radius is determined by the module and the number of teeth (as for spur gears).
 The next important parameter is the `cone_angle` defined as half of the vertex angle of the cone on which the teeth of the gear lie.
 Finally one needs to define either `w` or `z`, the first represent the slant height of the teeth (parallel to the cone face), the second is the height of the teeth (parallel to the cone axis which is the z axis).
 At this point the reference radius of the top face is determined and the construction is completed.
 
-img here
+<img src="https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/bevels.svg" width="200">
 
 ### Why does the bottom face of my bevel gear lies at negative z?
 
@@ -60,7 +60,7 @@ This is because the end faces of the teeth of a bevel gears are constructed by p
 
 ### I still have difficulties using the library, any further advice?
 
-When you are developing your design, think as gears as smooth cylinders (spur) and cones (bevel) determined by their reference radius. You need to have these well specified. Then you can let the library take care of producing properly meshing teeth on their surfaces.
+When you are developing your design, think as gears as smooth cylinders (spur) and cones (bevel) determined by their reference radius. You need to have these well specified. The library will then take care of producing properly meshing teeth on their lateral surfaces.
 
 ## Examples:
 
