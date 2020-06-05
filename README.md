@@ -30,9 +30,12 @@ Polygear requires **OpenSCAD v2019.05** or more recent.
  * linspace.scad - lightweight library for producing range of points
  * shortcuts.scad - a slightly enhanced version of the [excellent shortcuts library](https://www.thingiverse.com/thing:644830) by [Parkinbot](https://www.thingiverse.com/Parkinbot/about)
 
-## Extra:
+## Basic Knowledge:
 
-In the docs folder you will find a copy of the nice open access paper which I use for the generation of the involute profiles. It explains the computations implemented in PolyGearBase.scad
+The library uses industry standard terminology and conventions. KHK Gears published an [excellent summary](https://github.com/dpellegr/PolyGear/blob/master/docs/Basic%20Gear%20Terminology%20and%20Calculation%20-%20KHK%20Gears.pdf)
+ which is mirrored in the docs folder for convenience. If words like "module" and "pressure angle" confuses you, please make sure to review it.
+
+If you want to dive deeper in the evaluation/parameterization of the involute profiles, [this nice open access paper](https://github.com/dpellegr/PolyGear/blob/master/docs/Hartig%20Stein%20-%203D%20involute%20gear%20evaluation.pdf), is what inspired the computations implemented in PolyGearBase.scad.
 
 ## Examples:
 
