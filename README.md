@@ -47,20 +47,25 @@ If you really want to go the radius way, give a random module and use the openSC
 
 ### How are Bevel Gears constructed/determined?
 
-The construction of the bevel gears starts from the reference circle of the bottom face. It is always centered at the origin of the XY plane and its radius is determined by the module and the number of teeth (as for spur gears).
-The next important parameter is the `cone_angle` defined as half of the vertex angle of the cone on which the teeth of the gear lie.
-Finally one needs to define either `w` or `z`, the first represent the slant height of the teeth (parallel to the cone face), the second is the height of the teeth (parallel to the cone axis which is the z axis).
-At this point the reference radius of the top face is determined and the construction is completed.
+<img src="https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/bevels.svg" height="300">
 
-<img src="https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/bevels.svg" width="200">
+The construction of the bevel gears starts from the reference circle of the bottom face. It is always centered at the origin of the XY plane and its radius (*r<sub>ref</sub>* in the figure above) is determined by the module and the number of teeth (as for spur gears).
+The next important parameter is the `cone_angle` *⍺* defined as half of the vertex angle of the cone on which the teeth of the gear lie.
+Finally one needs to define either `w` or `z`, the first represent the slant height of the teeth (parallel to the cone face), the second is the height of the teeth (parallel to the cone axis which is the z axis). Preferring `w` over `z` allows you to produce matching tooth widths when pairing gears with different cone angles.
+
+At this point the reference radius of the top face is determined and the construction is completed.
 
 ### Why does the bottom face of my bevel gear lies at negative z?
 
-This is because the end faces of the teeth of a bevel gears are constructed by projecting the end faces of the teeth of a spur gear (which are planar) on the spherical suface centered at the cone vertex and passing by the reference circle.
+This is because the end faces of the teeth of the bevel gears are constructed by projecting the end faces of the teeth of a spur gear (which are planar) on the spherical suface centered at the cone vertex and passing by the reference circle.
+
+<img src="https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/bevels_sphere.svg" height="300">
+
+In the figure above the end-faces of the teeth of the corresponding spur gear are marked in blue. Their projection on the spherical surface is marked in red, as well as the resulting bevel gear. This kind of construction ensures that the whole tooth side of two mesing bevel gears (with the same `w`) are fully in contact, whithout partially sticking outside each other.
 
 ### I still have difficulties using the library, any further advice?
 
-When you are developing your design, think as gears as smooth cylinders (spur) and cones (bevel) determined by their reference radius. You need to have these well specified. The library will then take care of producing properly meshing teeth on their lateral surfaces.
+When you are developing your design, it can be helpfull to think gears as smooth cylinders (spur) and cones (bevel) determined by their reference radius. In this way you can focus on specify their size and positioning. The library will then take care of producing properly meshing teeth on their lateral surfaces.
 
 ## Examples:
 
