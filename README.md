@@ -67,7 +67,7 @@ This kind of construction is needed to allow the whole tooth side of two meshing
 
 ### I still have difficulties using the library, any further advice?
 
-While developing your design, it can be helpfull to envision gears as smooth cylinders (spur) and cones (bevel) determined by their reference radius. In this way you can focus on specify their size and positioning. The library will then take care of producing properly meshing teeth on their lateral surfaces.
+While developing your design, it can be helpful envisioning gears as smooth cylinders (spur) and cones (bevel) determined by their reference radius. In this way you can focus on specify their size and positioning. The library will then take care of producing properly meshing teeth on their lateral surfaces.
 
 ## Examples:
 
