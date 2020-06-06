@@ -63,7 +63,7 @@ This is because the end faces of the teeth of the bevel gears are constructed by
 
 In the figure above the end-faces of the teeth of the corresponding spur gear are marked in blue. Their projection on the spherical surface is marked in red, as well as the resulting bevel gear.
 
-This kind of construction allows the tooth sides of two meshing gears (with the same `w`) to be fully in contact, whithout having their ends sticking outside of each other.
+This kind of construction allows the tooth sides of two meshing gears (with the same `w`) to be fully in contact, whithout having their ends sticking outside of each other, while still defining the positioning of the gear by means of the bottom face reference circle.
 
 ### I still have difficulties using the library, any further advice?
 
