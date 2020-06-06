@@ -51,7 +51,7 @@ If you really want to go the radius way, give a random module and use the openSC
 
 The construction of the bevel gears starts from the reference circle of the bottom face. It is always centered at the origin of the XY plane and its radius (*r<sub>ref</sub>* in the figure above) is determined by the module and the number of teeth (as for spur gears).
 The next important parameter is the `cone_angle` *⍺* defined as half of the vertex angle of the cone on which the teeth of the gear lie.
-Finally one needs to define either `w` or `z`, the first represent the slant height of the teeth (parallel to the cone face), the second is the height of the teeth (parallel to the cone axis which is the z axis). Preferring `w` over `z` allows you to produce matching tooth widths when pairing gears with different cone angles.
+Finally one needs to define either `w` or `z`, the first represents the slant height of the teeth (parallel to the cone face), the second is the height of the teeth (parallel to the cone axis which is the z axis). Preferring `w` over `z` ensures matching tooth widths when pairing gears with different cone angles.
 
 At this point the reference radius of the top face is determined and the construction is completed.
 
