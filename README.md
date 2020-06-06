@@ -26,7 +26,7 @@ Using older version is discouraged, but feasible with minor modifications, see [
 
 ## Library files:
 
- * PolyGear.scad - main file, the one that you should read and *use (NOT include)* in your project
+ * PolyGear.scad - main file, the one that you should read and ***use (and NOT include)*** in your project
  * PolyGearBase.scad - computation of the gear profile and some meshing functions
  * PolyGearUtils.scad - collection of more and less trivial complementary functions
  * linspace.scad - lightweight library for producing range of points
@@ -43,7 +43,7 @@ If you want to dive deeper in the evaluation/parameterization of the involute pr
 
 ### I can't properly size my gears! Couldn't I just specify the radius? What is this "module" thing?
 
-You can think about the module as a universal measure of the size of the tooth. Having the same module is the first requisite when evaluating the proper meshing of two gears. It is therefore very deeply rooted into the industry standard and well described in the document from KHK Gears linked above. You could use the radius, but in the long run it would hurt yourself with fractional (or irrational) number of teeth and/or non meshing gears.
+You can think about the module as a universal measure of the size of the tooth. Having the same module is the first requisite when evaluating the proper meshing of two gears. It is therefore very deeply rooted into the industry standard and well described in the document from KHK Gears linked above. You could use the radius, but in the long run it would hurt yourself with fractional (likely irrational) number of teeth and/or non meshing gears.
 
 If you really want to go the radius way, you can always use the OpenSCAD `resize()` function, but you have been warned...
 
