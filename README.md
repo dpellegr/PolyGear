@@ -61,7 +61,9 @@ This is because the end faces of the teeth of the bevel gears are constructed by
 
 <img src="https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/bevels_sphere.svg" height="300">
 
-In the figure above the end-faces of the teeth of the corresponding spur gear are marked in blue. Their projection on the spherical surface is marked in red, as well as the resulting bevel gear. This kind of construction ensures that the whole tooth side of two mesing bevel gears (with the same `w`) are fully in contact, whithout partially sticking outside each other.
+In the figure above the end-faces of the teeth of the corresponding spur gear are marked in blue. Their projection on the spherical surface is marked in red, as well as the resulting bevel gear.
+
+This kind of construction is needed to allow the whole tooth side of two meshing gears (with the same `w`) to be fully in contact, whithout having their ends sticking outside of each other.
 
 ### I still have difficulties using the library, any further advice?
 
