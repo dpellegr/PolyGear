@@ -65,7 +65,7 @@ In the figure above the end-faces of the teeth of the corresponding spur gear ar
 
 ### I still have difficulties using the library, any further advice?
 
-When you are developing your design, it can be helpfull to think gears as smooth cylinders (spur) and cones (bevel) determined by their reference radius. In this way you can focus on specify their size and positioning. The library will then take care of producing properly meshing teeth on their lateral surfaces.
+While developing your design, it can be helpfull to envision gears as smooth cylinders (spur) and cones (bevel) determined by their reference radius. In this way you can focus on specify their size and positioning. The library will then take care of producing properly meshing teeth on their lateral surfaces.
 
 ## Examples:
 
