@@ -20,7 +20,7 @@ The main library file is well commented, and self-suffice as **documentation** f
 ________________
 
 ## Requirements:
-Polygear requires **OpenSCAD v2019.05** or more recent.
+PolyGear requires **OpenSCAD v2019.05** or more recent.
 
 Using older version is discouraged, but feasible with minor modifications, see [#2](https://github.com/dpellegr/PolyGear/issues/2).
 
