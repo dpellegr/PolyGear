@@ -55,7 +55,7 @@ Finally one needs to define either `w` or `z`, the first represents the slant he
 
 At this point the reference radius of the top face is determined and the construction is completed.
 
-### Why does the bottom face of my bevel gear lies at negative z?
+### Why does the bottom face of my bevel gear lie at negative z?
 
 This is because the end faces of the teeth of the bevel gears are constructed by projecting the end faces of the teeth of a spur gear (which are planar) on the spherical suface centered at the cone vertex and passing by the reference circle.
 
