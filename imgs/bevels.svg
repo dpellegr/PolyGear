@@ -5,13 +5,65 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg8"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="bevels.svg"
+   width="45.967819mm"
+   height="29.726797mm"
+   viewBox="0 0 45.967819 29.726797"
    version="1.1"
-   viewBox="0 0 19.976986 30.081999"
-   height="30.081999mm"
-   width="19.976986mm">
+   id="svg8">
+  <sodipodi:namedview
+     fit-margin-bottom="0.5"
+     fit-margin-right="0.5"
+     fit-margin-left="0.5"
+     fit-margin-top="0.5"
+     lock-margins="true"
+     inkscape:current-layer="svg8"
+     inkscape:window-maximized="1"
+     inkscape:window-y="18"
+     inkscape:window-x="0"
+     inkscape:cy="70.537912"
+     inkscape:cx="121.92322"
+     inkscape:zoom="2.7343012"
+     showgrid="false"
+     id="namedview850"
+     inkscape:window-height="792"
+     inkscape:window-width="1440"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect901"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect854"
+       effect="bspline" />
+  </defs>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -24,67 +76,93 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     transform="translate(2.6103215,-273.41254)"
-     id="layer1">
-    <path
-       id="path837"
-       d="m 15,300 c 0,0 -15,-25.6 -15,-25.6 0,0 0,25.6 0,25.6 0,0 15,0 15,0 z"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path841"
-       d="m 0,295 c 0,0 12.069,0 12.069,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       id="path853"
-       d="m 0.17836705,279.37198 c 0.76056047,0.003 1.47444815,-0.26216 2.10378145,-0.72083"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <text
-       id="text865"
-       y="302.30264"
-       x="4.692811"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px"
-         y="302.30264"
-         x="4.692811"
-         id="tspan863">r<tspan
+  <path
+     style="opacity:0.400148;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.396875;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 15.698423,26.232256 H 0.69842226 l 3.00695904,-5.005133 11.9930417,0.0051 z"
+     id="path910-9"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     sodipodi:nodetypes="ccccc"
+     id="path905"
+     d="m 39.751129,3.4863375 -12.059665,17.7407855 3.006959,5.005133 c 2.971904,-4.453115 0,0 14.570973,-21.8439704 z"
+     style="opacity:0.399745;fill:#ececec;stroke:#000000;stroke-width:0.396875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+  <path
+     sodipodi:nodetypes="ccccc"
+     id="path910"
+     d="m 15.698423,26.232256 h 15 l -3.006959,-5.005133 -11.993041,0.0051 z"
+     style="fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.396875;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     id="path837"
+     d="m 30.698423,26.232256 c 0,0 -15,-25.6 -15,-25.6 0,0 0,25.6 0,25.6 0,0 15,0 15,0 z"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.264583, 0.793749;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     id="path853"
+     d="m 15.87679,5.604236 c 0.76056,0.003 1.474448,-0.26216 2.103781,-0.72083"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+  <text
+     id="text865"
+     y="28.534899"
+     x="20.391233"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px;stroke-linejoin:round"
+       y="28.534899"
+       x="20.391233"
+       id="tspan863">r<tspan
    id="tspan867"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';baseline-shift:sub">ref</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="14.079369"
-       y="297.41687"
-       id="text865-0"><tspan
-         id="tspan863-8"
-         x="14.079369"
-         y="297.41687"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px">w</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-2.2427423"
-       y="298.28503"
-       id="text865-5"><tspan
-         id="tspan863-0"
-         x="-2.2427423"
-         y="298.28503"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px">z</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="0.68871975"
-       y="281.98221"
-       id="text865-6"><tspan
-         id="tspan863-3"
-         x="0.68871975"
-         y="281.98221"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px">α</tspan></text>
-    <path
-       transform="scale(0.26458333)"
-       id="path910"
-       d="m 0.60051154,1115.7386 c 0.0896671,5.88 -0.17771318,11.9078 0.13256565,17.6964 18.27797281,0 36.55594581,0 54.83391981,0 -0.894387,-2.445 -2.785057,-4.8899 -4.059911,-7.3352 -2.085381,-3.4814 -4.041242,-7.0919 -6.205208,-10.4937 -14.856265,0 -29.712533,0 -44.56880081,0 z"
-       style="opacity:1;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.787593;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-  </g>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';baseline-shift:sub;stroke-linejoin:round">ref</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     x="13.455681"
+     y="24.51729"
+     id="text865-5"><tspan
+       id="tspan863-0"
+       x="13.455681"
+       y="24.51729"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px;stroke-linejoin:round">z</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     x="16.387142"
+     y="8.2144642"
+     id="text865-6"><tspan
+       id="tspan863-3"
+       x="16.387142"
+       y="8.2144642"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px;stroke-linejoin:round">α</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     x="29.283291"
+     y="22.612448"
+     id="text865-0"><tspan
+       id="tspan863-8"
+       x="29.283291"
+       y="22.612448"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px;stroke-linejoin:round">w</tspan></text>
+  <text
+     id="text865-0-7"
+     y="24.82333"
+     x="20.218468"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px;stroke-linejoin:round"
+       y="24.82333"
+       x="20.218468"
+       id="tspan863-8-5">G<tspan
+   id="tspan933"
+   style="font-size:65%;baseline-shift:sub;stroke-linejoin:round">1</tspan></tspan></text>
+  <text
+     id="text865-0-3"
+     y="13.308858"
+     x="34.488029"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.30729px;line-height:6.61458px;font-family:RimWordFont;-inkscape-font-specification:RimWordFont;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';stroke-width:0.264583px;stroke-linejoin:round"
+       y="13.308858"
+       x="34.488029"
+       id="tspan863-8-56">G<tspan
+   id="tspan935"
+   style="font-size:65%;baseline-shift:sub;stroke-linejoin:round">2</tspan></tspan></text>
 </svg>
