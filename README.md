@@ -24,7 +24,7 @@ Polygear requires **OpenSCAD v2019.05** or more recent.
 
 ## Library files:
 
- * PolyGear.scad - main file, the one that you should read and *use* in your project
+ * PolyGear.scad - main file, the one that you should read and *use (NOT include)* in your project
  * PolyGearBase.scad - computation of the gear profile and some meshing functions
  * PolyGearUtils.scad - collection of more and less trivial complementary functions
  * linspace.scad - lightweight library for producing range of points
