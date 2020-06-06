@@ -16,11 +16,11 @@ I wrote this library because I was unsatisfied with the existing ones:
 
 being, to my taste, either too hampered, fragile or computational expensive. My aim has been overcoming these limitations. Do not expect lightening holes or other gimmicks, but comprehensive and efficient control over your gear teeth.
 
-I would expect that the comments in the code and the demo example should suffice as user **documentation**, but if I collect some good questions I may compile a FAQ.
+The main library file is well commented, and self-suffice as **documentation** for the various parameters and commands. If you need more insight please refer to the Knowledge Base and FAQ sections below.
 ________________
 
 ## Requirements:
-Polygear requires **OpenSCAD v2019.05** or more recent.
+Polygear requires **OpenSCAD v2019.05** or more recent. Using older version is discouraged, but feasible with minor modifications, see https://github.com/dpellegr/PolyGear/issues/2.
 
 ## Library files:
 
@@ -30,7 +30,7 @@ Polygear requires **OpenSCAD v2019.05** or more recent.
  * linspace.scad - lightweight library for producing range of points
  * shortcuts.scad - a slightly enhanced version of the [excellent shortcuts library](https://www.thingiverse.com/thing:644830) by [Parkinbot](https://www.thingiverse.com/Parkinbot/about)
 
-## Basic Knowledge:
+## Knowledge Base:
 
 The library uses industry standard terminology and conventions. KHK Gears published an [excellent summary](https://github.com/dpellegr/PolyGear/blob/master/docs/Basic%20Gear%20Terminology%20and%20Calculation%20-%20KHK%20Gears.pdf)
  which is mirrored in the docs folder for convenience. If words like "module" and "pressure angle" confuses you, please make sure to review it.
@@ -41,9 +41,9 @@ If you want to dive deeper in the evaluation/parameterization of the involute pr
 
 ### What is this "module" thing? Can't I just specify the radius?
 
-Please take a look at the document from KHK Gears linked above. The short answer is that you could use the radius, but in the long run it would hurt yourself with fractional number of teeth and/or non meshing gears. You can think about the module as a universal measure of the size of the tooth. Having the same module is the first requisite when evaluating the proper meshing of two gears, and therefore it is very deeply rooted into the industry standard. 
+You can think about the module as a universal measure of the size of the tooth. Having the same module is the first requisite when evaluating the proper meshing of two gears, and therefore it is very deeply rooted into the industry standard and well described in the document from KHK Gears linked above. You could use the radius, but in the long run it would hurt yourself with fractional number of teeth and/or non meshing gears.
 
-If you really want to go the radius way, give a random module and use the openSCAD resize() command, but you have been warned...
+If you really want to go the radius way, specify a random module, then use the OpenSCAD `resize()` command, but you have been warned...
 
 ### How are Bevel Gears constructed/determined?
 
