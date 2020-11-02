@@ -34,8 +34,8 @@ Using older version is discouraged, but feasible with minor modifications, see [
 
 ## Knowledge Base:
 
-The library uses industry standard terminology and conventions. KHK Gears published an [excellent summary](https://github.com/dpellegr/PolyGear/blob/master/docs/Basic%20Gear%20Terminology%20and%20Calculation%20-%20KHK%20Gears.pdf)
- which is mirrored in the docs folder for convenience. If words like "module" and "pressure angle" confuse you, please make sure to review it.
+The library uses industry standard terminology and conventions. KHK Gears published an [***excellent summary***](https://github.com/dpellegr/PolyGear/blob/master/docs/Basic%20Gear%20Terminology%20and%20Calculation%20-%20KHK%20Gears.pdf)
+ which is mirrored in the docs folder for convenience. If words like "module" and "pressure angle" confuse you, please **make sure to review it**.
 
 If you want to dive deeper in the evaluation/parameterization of the involute profiles, [this nice open access paper](https://github.com/dpellegr/PolyGear/blob/master/docs/Hartig%20Stein%20-%203D%20involute%20gear%20evaluation.pdf), is what inspired the computations implemented in PolyGearBase.scad.
 
@@ -43,7 +43,7 @@ If you want to dive deeper in the evaluation/parameterization of the involute pr
 
 ### I can't properly size my gears! Couldn't I just specify the radius? What is this "module" thing?
 
-You can think about the module as a universal measure of the size of the tooth. Having the same module is the first requisite when evaluating the proper meshing of two gears. It is therefore very deeply rooted into the industry standard and well described in the document from KHK Gears linked above. You could use the radius, but in the long run it would hurt yourself with fractional (likely irrational) number of teeth and/or non meshing gears.
+You can think about the module as a universal measure of the size of the tooth. Having the same module is the first requisite when evaluating the proper meshing of two gears. It is therefore very deeply rooted into the industry standard and well described in the [document from KHK Gears](https://github.com/dpellegr/PolyGear/blob/master/docs/Basic%20Gear%20Terminology%20and%20Calculation%20-%20KHK%20Gears.pdf). You could use the radius, but in the long run it would hurt yourself with fractional (likely irrational) number of teeth and/or non meshing gears.
 
 If you really want to go the radius way, you can always use the OpenSCAD `resize()` function, but you have been warned...
 
