@@ -78,7 +78,8 @@ The example folder collects some complex assemblies constructed with just a few 
 ## Contacts
 
 Feel free to drop me an email at pellegrini.dario/@/gmail/./com I am always happy to help and work *with* you especially if you are a student (note that being a student is a state of mind, you do not need to be a child or enrolled anywhere).
-**However** if you come to me with requests demanding a significant amount of my time and skill set, or you are working on a commercial project, do not expect me to do it for free. It took me years to forge my technical acuity and I will consider working *for* you only if reasonably compensated. In short: be respectfull.
+
+**However** if you come to me with requests demanding a significant amount of my time and skill set, or you are working on a commercial project, do not expect me to do it for free. It took me years to forge my technical acuity and I will consider working *for* you only if reasonably compensated. In short: be respectful.
 
 ## Enjoy!
 
