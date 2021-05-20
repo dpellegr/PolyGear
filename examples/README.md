@@ -1,8 +1,14 @@
 # Examples
 
+Here are collected some examples of more complex assemblies for your education and/or inspiration.
+
 ## crossed_axis_drive.scad
 
 ![](https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/crossed_axis_drive.gif "crossed_axes_drive")
+
+## planetary.scad
+
+![](https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/planetary.gif "planetary")
 
 ## ...
 
