@@ -28,9 +28,9 @@ Rz(180/sun_teeth*((planet_teeth+1)%2)) spur_gear(n=sun_teeth, z=10);
 
 // Now doing the planets
 // To properly place the planets without tooth interference, theta is computed.
-// It may be equal or slightly deviate from planet_angle*n depending on the other settings
+// It may slightly deviate from planet_angle depending on the numeber of teeth and planets.
 for (i=[0:n_planets-1]) 
-  let(theta = round(i*planet_angle*(1+sun_teeth/ring_teeth)*ring_teeth/360)*
+  let(theta = round(i*planet_angle*(ring_teeth+sun_teeth)/360)*
               360/(ring_teeth+sun_teeth))
   echo(str("Planet ",i+1," angle = ", theta))
   Rz(theta)
