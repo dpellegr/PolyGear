@@ -57,13 +57,15 @@ At this point the reference radius of the top face is fully constrained and the 
 
 ### Why does the bottom face of my bevel gear lie at negative z?
 
-This is because the end faces of the teeth of the bevel gears are constructed by projecting the end faces of the teeth of a spur gear (which are planar) on the spherical suface centered at the cone vertex and passing by the reference circle.
+This is because the end faces of the teeth of the bevel gears are constructed by folding the end faces of the teeth of a spur gear (which are planar) on the spherical suface centered at the cone vertex and passing by the reference circle.
 
 <img src="https://raw.githubusercontent.com/dpellegr/PolyGear/master/imgs/bevels_sphere.svg" height="300">
 
-In the figure above the end-faces of the teeth of the corresponding spur gear are marked in blue. Their projection on the spherical surface is marked in red, as well as the resulting bevel gear.
+In the figure above the end-faces of the teeth of the corresponding spur gear are marked in blue. Their projection on the spherical surface is marked in red, as well as the resulting bevel gear. Note that the figure above shows a *projection* and not the actual *folding* which the library uses to preserve the length of the teeth.
 
 This kind of construction allows the tooth sides of two meshing gears (with the same `w`) to be fully in contact, whithout having their ends sticking outside of each other, while still defining the positioning of the gear by means of the bottom face reference circle.
+
+In case you need it, you can quickly compute the distance between the reference circle and the bottom face with the helper function `bevel_gear_z_offset()`.
 
 ### I still have difficulties using the library, any further advice?
 

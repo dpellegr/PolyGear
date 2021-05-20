@@ -108,12 +108,10 @@ module bevel_gear(
   pts = flatten([ for (i=[0:fz-1]) let(zi=i*z/(fz-1), H=H0-zi, R=H/cos(cone_angle))
     Tzpts ( 
       fold_on_sphere( 
-        Tzpts ( 
-          gear_section(
-            n=n, m=m*H/H0, z=zi - z/2,
-            pressure_angle = pressure_angle, helix_angle = helix_angle[i], backlash = backlash,
-            add = add, ded = ded, x = x, type = type, $fn=$fn
-          ), -zi + z/2
+        gear_section(
+          n=n, m=m*H/H0, z=0,
+          pressure_angle = pressure_angle, helix_angle = helix_angle[i], backlash = backlash,
+          add = add, ded = ded, x = x, type = type, $fn=$fn
         ), R, [0,0,H]
       ), zi
     )
@@ -123,6 +121,14 @@ module bevel_gear(
   caps = make_cap_faces(Nlay, fz, n);
   polyhedron(points=pts, faces=concat(side, caps));
 }
+
+function bevel_gear_z_offset(n, m=1, cone_angle=45, ded=0) =
+  let(r0 = m*n/2,
+      r0_ded = f_r0_ded( r0, m, ded),
+      R = r0/sin(cone_angle),
+      ded_angle = (r0-r0_ded)/R*r2d,
+      z = R*(cos(cone_angle-ded_angle)-cos(cone_angle))
+  ) -z;
 
 module bevel_pair(
 //basic options

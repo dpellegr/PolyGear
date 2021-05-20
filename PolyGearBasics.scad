@@ -22,6 +22,9 @@ function prof(at, z, i, n, r0, rb, s0, c, flank, type) =
 function linearized_prof(t, z, i, n, r0, rb, s0, c, flank, type) = 
   prof(acos(1/t), z, i, n, r0, rb, s0, c, flank, type);
 
+function f_r0_add( r0, m, add) = r0 + m*(1 + add);
+function f_r0_ded( r0, m, ded) = r0 - m*(1+0.167)*(1 + ded);
+
 function gear_section (
 //basic options
   n = 16, // number of teeth
@@ -34,7 +37,7 @@ function gear_section (
   add = 0, // add to addendum
   ded = 0, // subtract to the dedendum
   x   = 0, // profile shift
-  type= 1,  //-1: internal 1: external. In practice it flips the sing of the profile shift
+  type= 1, //-1: internal 1: external. In practice it flips the sing of the profile shift
 //finesse options
   $fn=max($fn, 5)
 ) = 
@@ -50,8 +53,8 @@ let(
   s0 = r0*PI/n + 2*x*m*tan(a0) - backlash*m,
 
   // addendum and dedendum
-  ra0 = r0 + m*(1 + add),
-  rd0 = r0 - m*(1+0.167)*(1 + ded),
+  ra0 = f_r0_add(r0, m, add),
+  rd0 = f_r0_ded(r0, m, ded),
 
   // override ra in case the tips self cross
   minimum_tip_width = 0.1, //a bit above zero to avoid overlapping vertexes and degenerated facets
