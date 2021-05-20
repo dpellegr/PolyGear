@@ -55,10 +55,9 @@ module spur_gear(
   z = is_undef(w) ? z : w;
   pressure_angle = is_undef(a0) ? pressure_angle : a0;
   helix_angle    = let(hlx = is_undef(b0) ? helix_angle : b0) 
-                     is_list(hlx) ? hlx : [hlx/2, hlx/2];
+                     is_list(hlx) ? hlx : [hlx, hlx];
   backlash       = is_undef(tol) ? backlash : tol; // in module units
   fz = len(helix_angle);
-//  echo(helix_angle);
   pts = flatten([ for (i=[0:fz-1]) let(zi= z*i/(fz-1) - z/2) gear_section(
     n=n, m=m, z=zi,
     pressure_angle = pressure_angle, helix_angle = helix_angle[i], backlash = backlash,
@@ -107,11 +106,13 @@ module bevel_gear(
   H0 = r0/tan(cone_angle);
   pts = flatten([ for (i=[0:fz-1]) let(zi=i*z/(fz-1), H=H0-zi, R=H/cos(cone_angle))
     Tzpts ( 
-      fold_on_sphere( 
-        gear_section(
-          n=n, m=m*H/H0, z=0,
-          pressure_angle = pressure_angle, helix_angle = helix_angle[i], backlash = backlash,
-          add = add, ded = ded, x = x, type = type, $fn=$fn
+fold_on_sphere( 
+        Tzpts ( 
+          gear_section(
+            n=n, m=m*H/H0, z=zi - z/2, // need to pass z here to properly compute the helix...
+            pressure_angle = pressure_angle, helix_angle = helix_angle[i], backlash = backlash,
+            add = add, ded = ded, x = x, type = type, $fn=$fn
+          ), -zi + z/2 // ...even if here is subtracted
         ), R, [0,0,H]
       ), zi
     )
