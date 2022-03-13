@@ -8,7 +8,7 @@ include <PolyGearBasics.scad>
 
 module PGDemo() {
   $t=-$t;
-  bevel_pair(w=5, n1=17, n2=13, only=0, axis_angle=60, helix_angle = zerol(60));
+  bevel_pair(w=5, n1=17, n2=13, only=0, axis_angle=60, helix_angle = zerol(40));
 
   Rz(360*$t/17) Tz(-10) 
     spur_gear(n=17, pressure_angle=20, z=10, chamfer=30, helix_angle = [ for (x=linspace(-1,1,11)) exp(-abs(x))*50*sign(x) ]);
@@ -104,15 +104,15 @@ module bevel_gear(
   fz = len(helix_angle);
   r0 = m*n/2;
   H0 = r0/tan(cone_angle);
-  pts = flatten([ for (i=[0:fz-1]) let(zi=i*z/(fz-1), H=H0-zi, R=H/cos(cone_angle))
+  pts = flatten([ for (i=[0:fz-1]) let(wi=i*w/fz, zi=i*z/(fz-1), H=H0-zi, R=H/cos(cone_angle))
     Tzpts ( 
-fold_on_sphere( 
+      fold_on_sphere(
         Tzpts ( 
           gear_section(
-            n=n, m=m*H/H0, z=zi - z/2, // need to pass z here to properly compute the helix...
+            n = n, m = m*H/H0, z = wi - w/2, // here z is used to compute the helix...
             pressure_angle = pressure_angle, helix_angle = helix_angle[i], backlash = backlash,
             add = add, ded = ded, x = x, type = type, $fn=$fn
-          ), -zi + z/2 // ...even if here is subtracted
+          ), -wi + w/2 // ...and here we bring back the section to z=0
         ), R, [0,0,H]
       ), zi
     )
