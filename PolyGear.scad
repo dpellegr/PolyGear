@@ -23,11 +23,15 @@ PGDemo();
 
 ////////////////////////////////////////
 
+// Some pre-made functions for setting up profiles, to be used with helix_angle (see the above demo)
+
 function constant(helix=45, $fn=9) = lst_repeat(helix, $fn);
 function zerol(helix=30, $fn=9) = linspace(-helix, helix, $fn);
 function spiral(helix=30, $fn=9) = linspace(-helix, 0, $fn);
 function herringbone(helix=30, $fn=9) = let(n=floor($fn/2)) 
   concat( lst_repeat(-helix, n),[0],lst_repeat(helix, n) );
+
+////////////////////////////////////////
 
 module spur_gear(
 //basic options
@@ -44,11 +48,11 @@ module spur_gear(
   tol= undef, //overrides backlash
 //advanced options
   chamfer       = 0, // degrees, should be in [0:90[
-  chamfer_shift = 0, // from the pitch radius in module units
+  chamfer_shift = 0, // from the pitch radius, in module units
   add = 0, // add to addendum
   ded = 0, // subtract to the dedendum
   x   = 0, // profile shift
-  type= 1, //-1: internal 1: external. In practice it flips the sing of the profile shift
+  type= 1, // -1: internal 1: external. In practice it flips the sing of the profile shift
 //finesse options
   $fn=5,     // tooth profile subdivisions
 ) {
@@ -92,7 +96,7 @@ module bevel_gear(
   add = 0, // add to addendum
   ded = 0, // subtract to the dedendum
   x   = 0, // profile shift
-  type= 1, //-1: internal 1: external. In practice it flips the sing of the profile shift
+  type= 1, // -1: internal 1: external. In practice it flips the sing of the profile shift
 //finesse options
   $fn=max($fn, 5),     // tooth profile subdivisions
 ) {
@@ -150,7 +154,7 @@ module bevel_pair(
   add = 0, // add to addendum
   ded = 0, // subtract to the dedendum
   x   = 0, // profile shift
-  type= 1, //-1: internal 1: external. In practice it flips the sing of the profile shift
+  type= 1, // -1: internal 1: external. In practice it flips the sing of the profile shift
 //finesse options
   $fn=max($fn, 5)     // tooth profile subdivisions
 ){
