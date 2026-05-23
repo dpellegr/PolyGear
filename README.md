@@ -28,7 +28,7 @@ Using older version is discouraged, but feasible with minor modifications, see [
  * PolyGearBase.scad - computation of the gear profile and some meshing functions
  * PolyGearUtils.scad - collection of more and less trivial complementary functions
  * linspace.scad - lightweight library for producing range of points
- * shortcuts.scad - a slightly enhanced version of the [excellent shortcuts library](https://www.thingiverse.com/thing:644830) by [Parkinbot](https://www.thingiverse.com/Parkinbot/about)
+ * shortcuts.scad - a slightly enhanced version of the [excellent shortcuts library](https://www.thingiverse.com/thing:644830) by [Parkinbot](https://www.thingiverse.com/Parkinbot/designs)
 
 ## Knowledge Base:
 
